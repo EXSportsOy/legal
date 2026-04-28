@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interpolation – SurveyTools User Guide</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="logo">SurveyTools</div>
+        <div class="tagline">Interpolation</div>
+      </div>
+      <div class="nav">
+        <a href="../index.html">User Guide</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h1>Interpolation</h1>
+      <p>
+        Interpolation helps you estimate a value that sits between two known table values.
+        In SurveyTools, interpolation is primarily intended for table-based workflows
+        (e.g. ullage/trim tables).
+      </p>
+
+      <h2>Typical workflow</h2>
+      <ol>
+        <li>Identify the two surrounding table points (or two surrounding rows/columns).</li>
+        <li>Enter the known values and the measured value you want to interpolate for.</li>
+        <li>Calculate and copy the interpolated result into your worksheet/report.</li>
+      </ol>
+
+      <h2>Available methods</h2>
+      <h3>Linear interpolation</h3>
+      <p>
+        Use this when you have two known points: <code>(x1, y1)</code> and <code>(x2, y2)</code>,
+        and you need <code>y</code> at <code>x</code>.
+      </p>
+
+      <h3>One-way interpolation (table interval)</h3>
+      <p>
+        Use this when your table has a known fixed interval (for example ullage in mm).
+        You provide the measured value (<code>ullage</code>), the interval, and the two neighbouring
+        table values (<code>y1</code>, <code>y2</code>).
+      </p>
+
+      <h3>Two-way interpolation (ullage + trim)</h3>
+      <p>
+        Use this when the table depends on two variables (commonly ullage and trim).
+        The app first interpolates along ullage for each trim column, then interpolates
+        between those two intermediate results along the trim axis.
+      </p>
+
+
+      <h2>Notes & limitations</h2>
+      <ul>
+        <li>If intervals are zero or negative, interpolation is invalid.</li>
+        <li>If the two x-values are identical (<code>x1 == x2</code>), a unique interpolation is not possible.</li>
+        <li>Always ensure the table values you use belong to the correct tank/table and units.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+

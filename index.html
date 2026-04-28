@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Legal – SurveyTools by EXSports Oy</title>
+  <title>EXSports Oy</title>
   <style>
-    /* Default: Dark theme */
     :root {
       --bg-color: #121212;
       --text-color: #e0e0e0;
@@ -70,7 +69,7 @@
       border: 1px solid var(--card-border);
       border-radius: 12px;
       box-shadow: 0 4px 32px var(--card-shadow);
-      max-width: 440px;
+      max-width: 480px;
       width: 100%;
       padding: 40px 36px 32px;
       text-align: center;
@@ -78,65 +77,64 @@
     }
 
     .logo {
-      font-size: 28px;
+      font-size: 30px;
       font-weight: bold;
       color: var(--logo-color);
       letter-spacing: 1px;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
 
     .tagline {
       font-size: 14px;
       color: var(--tagline-color);
-      margin-bottom: 32px;
+      margin-bottom: 36px;
     }
 
     h1 {
-      font-size: 16px;
+      font-size: 13px;
       color: var(--heading-color);
-      margin-bottom: 24px;
+      margin-bottom: 20px;
       font-weight: normal;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
 
-    .links {
+    .apps {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 14px;
     }
 
-    .link-btn {
+    .app-btn {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 16px;
       background: var(--link-bg);
       border: 1px solid var(--link-border);
-      border-radius: 8px;
-      padding: 16px 20px;
+      border-radius: 10px;
+      padding: 18px 20px;
       text-decoration: none;
       color: var(--link-text);
-      font-size: 15px;
+      font-size: 16px;
       font-weight: bold;
       transition: background 0.15s, border-color 0.15s, color 0.15s;
+      text-align: left;
     }
 
-    .link-btn:hover {
+    .app-btn:hover {
       background: var(--link-hover-bg);
       border-color: var(--link-hover-border);
       color: var(--link-hover-text);
     }
 
-    .link-btn .icon { font-size: 22px; flex-shrink: 0; }
+    .app-btn .icon { font-size: 28px; flex-shrink: 0; }
 
-    .link-btn .desc {
+    .app-btn .desc {
       font-size: 12px;
       font-weight: normal;
       color: var(--link-desc);
-      margin-top: 2px;
+      margin-top: 3px;
     }
-
-    .link-btn .text { text-align: left; }
 
     footer {
       margin-top: 32px;
@@ -152,45 +150,22 @@
 <body>
 
   <div class="card">
-    <div class="logo">SurveyTools</div>
-    <div class="tagline">by EXSports Oy</div>
-    <h1>Documents</h1>
-    <div class="links">
-      <!-- Top link: User Guide -->
-      <a class="link-btn" href="../user-guide/index.html">
-        <span class="icon">📘</span>
-        <div class="text">
-          User Guide
-          <div class="desc">How to use the calculators and what they do</div>
+    <div class="logo">EXSports Oy</div>
+    <div class="tagline">Mobile Applications</div>
+    <h1>Our Apps</h1>
+    <div class="apps">
+      <a class="app-btn" href="surveytools/index.html">
+        <span class="icon">📐</span>
+        <div>
+          SurveyTools
+          <div class="desc">Calculators for survey &amp; measurement workflows</div>
         </div>
       </a>
-
-      <a class="link-btn" href="../legal/privacy_policy.html">
-        <span class="icon">🔒</span>
-        <div class="text">
-          Privacy Policy
-          <div class="desc">How we collect, use and protect your data</div>
-        </div>
-      </a>
-      <a class="link-btn" href="../legal/disclaimer.html">
-        <span class="icon">⚠️</span>
-        <div class="text">
-          Disclaimer
-          <div class="desc">Limitation of liability and terms of use</div>
-        </div>
-      </a>
-      <a class="link-btn" href="../legal/report-bug.html">
-        <span class="icon">🐛</span>
-        <div class="text">
-          Report a Bug
-          <div class="desc">Tell us what went wrong in the app</div>
-        </div>
-      </a>
-      <a class="link-btn" href="../legal/delete.html">
-        <span class="icon">🗑️</span>
-        <div class="text">
-          Data Deletion Request
-          <div class="desc">Request removal of your personal data</div>
+      <a class="app-btn" href="heda/index.html">
+        <span class="icon">🧠</span>
+        <div>
+          Heda
+          <div class="desc">Versatile migraine diary with Google Health Connect</div>
         </div>
       </a>
     </div>
